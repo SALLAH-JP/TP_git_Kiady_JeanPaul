@@ -14,7 +14,7 @@ if Choix == 1:
 elif Choix == 0:
     Dico = dataTask.Load()
 
-Choix = int(input("Voulez vous sauvegarder ?/nEntrer O pour "Oui" et 1 pour "Non""))
+Choix = int(input("Voulez vous sauvegarder ?\nEntrer O pour Oui et 1 pour Non : "))
 
 if Choix == 0:
     Nom = input("Quel est le nom de votre fichier ? : ")
