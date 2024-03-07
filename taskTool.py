@@ -4,11 +4,11 @@ def AddTache(location, tache):
     with open(location, 'r') as f:
         data = json.load(f)
 
-    f[tache] = ""
+    data[tache] = False
 
 
 def DelTache(location, tache):
     with open(location, 'r') as f:
         data = json.load(f)
 
-    del f[tache]
+    del data[tache]
