@@ -6,3 +6,11 @@ def SaveDic (dictionary,  file_name):
 	json.dump(dictionary , fichier )	
 
 
+def Load ( file_name):
+    
+    with open("filename, 'r') as json_files:
+	data = json.load(json_file)
+    return data
+
+		
+    	
