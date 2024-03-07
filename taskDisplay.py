@@ -1,12 +1,14 @@
-import sys
-sys.path.append('manageTask/taskTool.py')
-
 import taskTool
+import dataTask
 
 Choix = int(input("Que voulez vous faire ? \nEntrer O si vous voulez charger une liste de taches ou 1 si vous voulez créer une liste de taches : "))
 
-Dico = {}
-
-taskTool.AddTache(Dico, "nom")
-
-print(Dico)
+if Choix == 1:
+    Dico = {}
+    Nombre = int(input("Combien de tache voulez vous créer ? : "))
+    for indice in range(Nombre):
+        Tache = input("Quel est la valeur la tache numéro ", indice, " ? : ")
+        taskTool.AddTache(Dico, Tache)
+    
+elif Choix == 0:
+    Dico = dataTask.Load()
