@@ -1,5 +1,5 @@
 import json 
-
+import os
 def SaveDic (dictionary,  file_name):
 
     with open(file_name, "w") as fichier:
@@ -12,7 +12,7 @@ def Load ( file_name):
 	data = json.load(json_file)
     return data
 
-import os
+
 
 def delete_database(filename):
 	
