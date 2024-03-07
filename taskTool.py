@@ -1,20 +1,11 @@
 import json
 
-def AddTache(location, tache):
-    with open(location, 'r') as f:
-        data = json.load(f)
-
-    data[tache] = False
+def AddTache(Dico, Tache):
+    Dico[Tache] = False
 
 
-def DelTache(location, tache):
-    with open(location, 'r') as f:
-        data = json.load(f)
-
-    del data[tache]
+def DelTache(Dico, Tache):
+    del Dico[Tache]
     
-def EndTache(location, tache):
-    with open(location, 'r') as f:
-        data = json.load(f)
-
-    data[tache] = True
+def EndTache(Dico, Tache):
+    Dico[Tache] = True
